@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.mail.aslanisl.mathtask.MainActivity">
+
+    <TextView
+        android:id="@+id/formula_textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <HorizontalScrollView
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        style="@style/LayoutStyles"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/scrollview_horizontal"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                style="@style/ButtonStyleScrollable"
+                android:id="@+id/X_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:text="@string/x" />
+
+            <Button
+                style="@style/ButtonStyleScrollable"
+                android:id="@+id/module_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:text="@string/module" />
+
+            <Button
+                style="@style/ButtonStyleScrollable"
+                android:id="@+id/sin_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:text="@string/sin" />
+
+            <Button
+                style="@style/ButtonStyleScrollable"
+                android:id="@+id/cos_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:text="@string/cos" />
+
+            <Button
+                style="@style/ButtonStyleScrollable"
+                android:id="@+id/tg_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:text="@string/tg" />
+
+            <Button
+                style="@style/ButtonStyleScrollable"
+                android:id="@+id/ctg_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:text="@string/ctg" />
+
+            <Button
+                style="@style/ButtonStyleScrollable"
+                android:id="@+id/pi_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:text="@string/pi" />
+
+            <Button
+                style="@style/ButtonStyleScrollable"
+                android:id="@+id/exp_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:text="@string/exp" />
+
+            <Button
+                style="@style/ButtonStyleScrollable"
+                android:id="@+id/grad_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:text="@string/grad" />
+
+            <Button
+                style="@style/ButtonStyleScrollable"
+                android:id="@+id/scs_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:text="@string/scs" />
+
+            <ImageButton
+                style="@style/ButtonStyleScrollable"
+                android:contentDescription="@string/func"
+                android:src="@drawable/some_difficult_func"
+                android:id="@+id/someDifficultFunction_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"/>
+
+            <ImageButton
+                style="@style/ButtonStyleScrollable"
+                android:contentDescription="@string/elev"
+                android:src="@drawable/system_of_equations"
+                android:id="@+id/equation_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                style="@style/ButtonStyleScrollable"
+                android:id="@+id/i_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:text="@string/i" />
+
+            <ImageButton
+                style="@style/ButtonStyleScrollable"
+                android:contentDescription="@string/mat"
+                android:src="@drawable/matrix"
+                android:id="@+id/matrix_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"/>
+
+            <Button
+                style="@style/ButtonStyleScrollable"
+                android:id="@+id/rank_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:text="@string/rank" />
+
+            <Button
+                style="@style/ButtonStyleScrollable"
+                android:id="@+id/det_button"
+                android:layout_width="44dp"
+                android:layout_height="match_parent"
+                android:text="@string/det" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@id/scrollview_horizontal"
+        android:id="@+id/fifth_linearLayout"
+        style="@style/LayoutStyles">
+
+        <ImageButton
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/log"
+            android:id="@+id/log_button"/>
+
+        <Button
+            android:id="@+id/zero_button"
+            style="@style/ButtonNumbersStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="0" />
+
+        <Button
+            style="@style/ButtonNumbersStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/point_button"
+            android:text="@string/point"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/euq_button"
+            android:text="@string/equ"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/leftArrow_button"
+            android:text="@string/leftArrow"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/rightArrow_button"
+            android:text="@string/rightArrow"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@id/fifth_linearLayout"
+        android:id="@+id/fourth_linearLayout"
+        style="@style/LayoutStyles">
+
+        <ImageButton
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/fraction"
+            android:id="@+id/fraction_button"/>
+
+        <Button
+            style="@style/ButtonNumbersStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/one_button"
+            android:text="@string/one"/>
+
+        <Button
+            style="@style/ButtonNumbersStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/two_button"
+            android:text="@string/two"/>
+
+        <Button
+            style="@style/ButtonNumbersStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/three_button"
+            android:text="@string/three"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/multi_button"
+            android:text="@string/multi"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/plus_button"
+            android:text="@string/plus"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_above="@id/fourth_linearLayout"
+        android:id="@+id/third_linearLayout"
+        style="@style/LayoutStyles">
+
+        <ImageButton
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/square"
+            android:layout_weight="1"
+            android:id="@+id/power_button"/>
+
+        <Button
+            style="@style/ButtonNumbersStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/four_button"
+            android:text="@string/four"/>
+
+        <Button
+            style="@style/ButtonNumbersStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/five_button"
+            android:text="@string/five"/>
+
+        <Button
+            style="@style/ButtonNumbersStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/six_button"
+            android:text="@string/six"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/div_button"
+            android:text="@string/division"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/minus_button"
+            android:text="@string/minus"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:orientation="horizontal"
+        android:id="@+id/second_linearLayout"
+        android:layout_above="@id/third_linearLayout"
+        style="@style/LayoutStyles">
+
+        <ImageButton
+            style="@style/ButtonStyle"
+            android:src="@drawable/root"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/root_button"/>
+
+        <Button
+            style="@style/ButtonNumbersStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/seven"
+            android:id="@+id/seven_button"/>
+
+        <Button
+            style="@style/ButtonNumbersStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/eight"
+            android:id="@+id/eight_button"/>
+
+        <Button
+            style="@style/ButtonNumbersStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/nine"
+            android:id="@+id/nine_button"/>
+
+        <Button
+            style="@style/ButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/leftBracket"
+            android:id="@+id/leftBracket_button"/>
+
+        <Button
+            android:id="@+id/rightBracket_button"
+            style="@style/StrangeButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/rightBracket" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:orientation="horizontal"
+        android:id="@+id/linear_functions"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_above="@id/second_linearLayout"
+        style="@style/LayoutStyles">
+
+        <Button
+            style="@style/ButtonSolveStyle"
+            android:text="@string/solve"
+            android:textAllCaps="false"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/solve_button"
+            android:layout_weight="2.5"/>
+
+        <ImageButton
+            style="@style/TopButton"
+            android:contentDescription="@string/back"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:id="@+id/back_button"
+            android:src="@drawable/back"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            style="@style/TopButton"
+            android:contentDescription="@string/next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/next"
+            android:id="@+id/next_button"
+            android:layout_weight="1"/>
+
+        <ImageButton
+            style="@style/TopButton"
+            android:contentDescription="@string/delete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/delete"
+            android:id="@+id/delete_button"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/power_cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/third_linearLayout"
+        android:layout_marginBottom="-13dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp"
+        app:cardUseCompatPadding="true"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:id="@+id/power_linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="52dp"
+            android:background="@drawable/linearlayout_shape"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/squarePower_button"
+                style="@style/ExpandableButtonStyle"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:src="@drawable/square" />
+
+            <ImageButton
+                android:id="@+id/cubePower_button"
+                style="@style/ExpandableButtonStyle"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:src="@drawable/cube" />
+
+            <ImageButton
+                android:id="@+id/powerExpan_button"
+                style="@style/ExpandableButtonStyle"
+                android:layout_width="46dp"
+                android:layout_height="46dp"
+                android:src="@drawable/power" />
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
